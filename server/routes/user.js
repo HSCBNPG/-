@@ -6,8 +6,18 @@ var router=express.Router();
 router.get('/data',function(req,res){
 	res.send('hahaha');
 });
-
-
+// 创建首页路由
+router.get('/index',function(req,res){
+	res.send()
+});
+// 创建注册路由
+router.get('/reg',function(req,res){
+	
+});
+// 登录路由
+router.get('/log',function(req,res){
+	
+})
 
 // 导出路由器
 module.exports=router;

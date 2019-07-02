@@ -4,11 +4,9 @@ const express=require('express');
 var app=express();
 // 引入路由器模块
 var router=require('./routes/user.js');
-// console.log(userRoutes)
-// 设置监听端口
-app.listen(8080);
-app.get('/index',function(req,res){
-	res.sendFile(__dirname+'/../html/index.html');
-});
 // 使用路由器
 app.use('/user',router);
+// 托管静态资源到html下
+app.use( express.static('../html') );
+// 设置监听端口
+app.listen(8080);

@@ -7,7 +7,11 @@ CREATE DATABASE proj CHARSET=UTF8;
 #进入数据库
 USE proj;
 CREATE TABLE user(
-	uid INT,
+	uid INT PRIMARY KEY AUTO_INCREMENT,
 	uname VARCHAR(10),
-	sex BOOL
+	upwd VARCHAR(16)
 );
+INSERT INTO user VALUES
+(1,"xiaoming","123456"),
+(2,"dingding","123456"),
+(null,"xixi","123456");
