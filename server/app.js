@@ -4,6 +4,8 @@ const express=require('express');
 var app=express();
 // 引入路由器模块
 var router=require('./routes/user.js');
+// 引入管理员路由器模块
+var adm=require('./routes/adm.js');
 
 
 // 托管静态资源到html下
@@ -18,5 +20,7 @@ app.use( bodyparser.urlencoded({
 
 // 使用路由器，挂载路由器要放在中间件下边
 app.use('/user',router);
+// 挂载管理员路由器
+app.use('/adm',adm);
 // 设置监听端口
 app.listen(8080);

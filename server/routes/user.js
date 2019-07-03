@@ -4,6 +4,8 @@ const express=require('express');
 var router=express.Router();
 // 引入连接池模块
 var pool=require('../../mysql/pool.js');
+// 创建首页路由
+
 // 创建注册路由
 router.post('/reg',function(req,res){
 	// 获取post请求的值
@@ -31,17 +33,23 @@ router.post('/reg',function(req,res){
 				if(result.affectedRows>0){
 					res.send('注册成功');
 				}
-			})
+			});
 		}
 	});
 });
-// 创建首页路由
-router.get('/index',function(req,res){
-	res.send()
-});
-// 创建注册路由
-router.get('/reg',function(req,res){
-	
+// 创建登录路由
+router.get('/log',function(req,res){
+	// 获取请求对象并转为对象
+	var obj=req.query;
+	pool.query('SELECT * FROM user WHERE uname=? AND upwd=?',[obj.uname,obj.upwd],function(err,result){
+		if(err)throw err;
+		console.log(result)
+		if(result.length>0){
+			res.send('登陆成功');
+		}else{
+			res.send('账户名或密码错误')
+		}
+	})
 });
 // 登录路由
 router.get('/log',function(req,res){
