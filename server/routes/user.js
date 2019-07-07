@@ -51,10 +51,19 @@ router.get('/log',function(req,res){
 		}
 	})
 });
-// 登录路由
-router.get('/log',function(req,res){
-	
-})
+// result规则登录路由
+router.get('/v1/restful_log/:uname&:upwd',function(req,res){
+	var $uname=req.params.uname;
+	var $upwd=req.params.upwd;
+	var sql='select * from user where uname=? and upwd=?';
+	pool.query(sql,[$uname,$upwd],(err,result)=>{
+		if(result.length>0){
+			res.send('登陆成功');
+		}else{
+			res.send('登陆失败')
+		}
+	});
+});
 
 // 导出路由器
 module.exports=router;

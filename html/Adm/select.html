@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>查询用户——adm</title>
+	<script type="text/javascript">
+		var html=`
+			<table border="1px">
+				<tr>
+					<th>编号</th>
+					<th>姓名</th>
+					<th>密码</th>
+					<th>操作</th>
+				</tr>
+		`;
+		function show(){
+			var xhr=new XMLHttpRequest();
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4 && xhr.status==200){
+					// 服务器响应从数据库响应过来的对象到前端之后就变成一个json
+					// 需要讲json解析成一个数组--对象数组
+					console.log(xhr.responseText);
+					var arr=JSON.parse(xhr.responseText);
+					console.log(arr);
+					d1.innerHTML=arr[0].uid;
+					for(var i=0;i<arr.length;i++){
+						html+=`
+							<tr>
+								<td>${arr[i].uid}</td>
+								<td>${arr[i].uname}</td>
+								<td>${arr[i].upwd}</td>
+								<td><button onclick="delect()">删除</button></td>
+							</tr>
+						`;
+					}
+					html+="</table>";
+					d1.innerHTML=html;
+				}
+			}
+			xhr.open('get','/adm/select',true);
+			xhr.send();
+		}
+	</script>
+</head>
+<body>
+	<button onclick="show()">显示用户</button>
+	<div id="d1"></div>
+
+</body>
+</html>

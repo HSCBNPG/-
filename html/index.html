@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>我的项目首页</title>
+	<script type="text/javascript">
+		//登录框
+		function login(){
+			html=`
+				<input id="uname" type="text"><br>
+				<input id="upwd" type="text"><br>
+				<button onclick="getlogin()">登录</button>
+			`;
+			d1.innerHTML=html
+		}
+		// 登录接口
+		function getlogin(){
+			var $uname=uname.value;
+			var $upwd=upwd.value;
+			if(!$uname || !$upwd){
+				alert('账号和密码不能为空');
+				return;
+			}
+			var xhr=new XMLHttpRequest();
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4 && xhr.status==200){
+					alert(xhr.responseText);
+				}
+			}
+			xhr.open('get','/user/v1/restful_log/'+$uname+'&'+$upwd,true)
+			xhr.send();
+		}
+	</script>
 </head>
 <body>
-	<h1>首页</h1>
+	<div id="d1">
+		
+	</div>
+	<h1 id="shouye">首页</h1>
 	<a href="http://127.0.0.1:8080/user_reg.html">注册</a>
-	<a href="http://127.0.0.1:8080/user_log.html">登录</a>
+	<!-- 登录按钮 -->
+	<button onclick="login()">登录</button>
+	
+		
 	<a href="">hahahahaha</a>
 	<a href="http://127.0.0.1:8080/Adm/index.html">管理员页面</a>
 	<img src="8.jpg">
