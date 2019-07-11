@@ -6,6 +6,9 @@ var router=express.Router();
 var pool=require('../../mysql/pool.js');
 // 创建首页路由
 
+router.get('/add',function(req,res){
+	res.send('111')
+})
 // 创建注册路由
 router.post('/reg',function(req,res){
 	// 获取post请求的值
