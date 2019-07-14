@@ -76,3 +76,14 @@ a>img:hover{
 	color:rgb(187,187,187);
 	font-size:12px;
 }
+/* 头部导航栏样式 */
+#header{
+	width:100%;
+	height:65px;
+	background: #000000;
+}
+#header_content{
+	width:1210px;
+	height:65px;
+	margin:0 auto;
+}
