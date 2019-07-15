@@ -43,14 +43,16 @@ input{
     width:500px;
     height:100%;
 }
-#tbn ul li p{
+#tbn ul li a{
     float:left;
     box-sizing:border-box;
     /* border:1px solid red; */
-    width:100px;
+    width:113px;
     line-height: 65px;
-    margin-right:13px;
-    background:url(sony_images/dot_down_black.jpg) no-repeat 70px center;
+    /* margin-right:13px; */
+    color:white;
+    text-align:center;
+    background:url(sony_images/dot_down_black.jpg) no-repeat 90px center;
 }
 #serch{
     /* border: 1px solid red; */
@@ -62,6 +64,28 @@ input{
     text-indent:12px;
     margin-top:21px;
     background:white url(sony_images/btn_search_03.jpg) no-repeat 207px center;
+}
+/* 第一个二级列表 */
+#tbn ul li a:hover{
+    background:white url(sony_images/dot_down_blue.jpg) no-repeat 90px center;
+    color: #1fa8e2;
+}
+#list_l1{
+    position:relative;
+    width:100px;
+    height:100%;
+}
+#list_l1>div{
+    width:200px;
+    height:500px;
+    position:absolute;
+    top:65px;
+    right:0px;
+    border:1px solid red;
+    display:none;
+}
+#list_l1:hover>div{
+    display: block;
 }
 /* 头部导航栏右侧样式 */
 #header_right{
@@ -97,8 +121,8 @@ input{
 /*首页轮播图*/
 #swiper-container{
     width:100%;
-    height:868px;
-    border:2px solid red;
+    height:700px;
+    background:url('sony_images/kv_sel35f18f_xpfb.jpg') center center / cover no-repeat;
 }
 /*数码影像*/
 #MainB1{
