@@ -94,3 +94,27 @@ input{
 #log_reg>a:visited{
     color:#1fa8e2;
 }
+/*首页轮播图*/
+#swiper-container{
+    width:100%;
+    height:868px;
+    border:2px solid red;
+}
+/*数码影像*/
+#MainB1{
+    width:100%;
+    height:1767px;
+    border:2px solid red;
+}
+#MainB1>h2{
+    text-align:center;
+}
+/*便携音频*/
+#MainB2{
+    width:100%;
+    height:1767px;
+    border:2px solid red;
+}
+#MainB2>h2{
+    text-align: center;
+}
