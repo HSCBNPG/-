@@ -1,11 +1,22 @@
+@media screen and (max-width:700px) and (min-width:500px) {
+	body{
+		background:#dcc1ed;
+	}
+}
+@media screen and (min-width:701px) {
+	body{
+		background:url("sony_images/kv_sel35f18f_xpfb.jpg") no-repeat;
+		background-size:100% 100%;
+		background-attachment:fixed;
+		/* background-color:rgba(0,0,0,0.3); */
+	}
+}
 *{margin:0;padding:0;outline: 0;}
 a{text-decoration:none;color:black;}
 a:hover{
 	color:#e08616;
 }
-body{
-	background:#dcc1ed;
-}
+
 input{outline:0;}
 #shensuotu{
 	width:100%;
