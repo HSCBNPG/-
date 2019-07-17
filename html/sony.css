@@ -73,6 +73,11 @@ input{
     margin-top:21px;
     background:white url(sony_images/btn_search_03.jpg) no-repeat 207px center;
 }
+#list_serch::after{
+    content:"";
+    display:block;
+    clear:both;
+}
 /* 第一个二级列表 */
 #tbn ul li a:hover{
     background:white url(sony_images/dot_down_blue.jpg) no-repeat 90px center;

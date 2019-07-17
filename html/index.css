@@ -87,3 +87,22 @@ a>img:hover{
 	height:65px;
 	margin:0 auto;
 }
+/*animate*/
+#animate{
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+	align-items:center;
+	
+}
+#animate>span{
+	display:block;
+	animation:zoomOutDown 2s;
+	font:88px "Century Gothic";
+	font-style:normal;
+	color:#f35626;
+	/*background-image:linear-gradient(92deg, #f35626 0%,#feab3a 100%);*/
+}
+#animate:hover{
+	animation:zoomOutDown 2s;
+}
