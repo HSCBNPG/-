@@ -65,13 +65,13 @@ input{
 #serch{
     /* border: 1px solid red; */
     float:left;
-    width: 202px;
+    width: 265px;
     height:25px;
     padding-right:35px;
     border-radius:25px;
     text-indent:12px;
     margin-top:21px;
-    background:white url(sony_images/btn_search_03.jpg) no-repeat 207px center;
+    background:white url(sony_images/btn_search_03.jpg) no-repeat 239px center;
 }
 #list_serch::after{
     content:"";
@@ -135,7 +135,9 @@ input{
 #swiper-container{
     width:100%;
     height:800px;
-    background:url('sony_images/kv_sel35f18f_xpfb.jpg') center center / cover no-repeat;
+    background-image:url('sony_images/kv_sel35f18f_xpfb.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
 }
 /*数码影像*/
 #MainB1{
@@ -145,6 +147,10 @@ input{
 }
 #MainB1>h2{
     text-align:center;
+}
+#smyx_bg{
+    background:url("sony_images/blocktitlelogo.png") no-repeat;
+    background-position:0px center;
 }
 /*便携音频*/
 #MainB2{
