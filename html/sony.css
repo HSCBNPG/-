@@ -1,4 +1,5 @@
 body,ul,p,h2{
+    background-color:#f1f4f9;
     margin:0;
     padding:0;
     list-style:none;
@@ -33,13 +34,13 @@ input{
     float:left;
     /*width:200px;
     height:100%;*/
-    /*padding-top:25px;*/
+   margin-top:25px;
+   margin-left:25px;
 }
 #header_conten>#log>a{
     display:block;
     width:109px;
     /*height:20px;*/
-    padding-top:25px;
 }
 #log>a>img{
     width:100px;
@@ -48,8 +49,8 @@ input{
 /* 二级列表搜索框样式 */
 #header_nav_main{
     float:left;
-    width:500px;
     height:100%;
+    margin-left:9%;
 }
 #tbn ul li a{
     float:left;
@@ -60,7 +61,7 @@ input{
     /* margin-right:13px; */
     color:white;
     text-align:center;
-    background:url(sony_images/dot_down_black.jpg) no-repeat 90px center;
+    background:url(sony_images/dot_down_black.jpg) no-repeat 95px center;
 }
 #serch{
     /* border: 1px solid red; */
@@ -73,6 +74,9 @@ input{
     margin-top:21px;
     background:white url(sony_images/btn_search_03.jpg) no-repeat 239px center;
 }
+#list_serch{
+    margin-left:20px;
+}
 #list_serch::after{
     content:"";
     display:block;
@@ -83,10 +87,12 @@ input{
     background:white url(sony_images/dot_down_blue.jpg) no-repeat 90px center;
     color: #1fa8e2;
 }
+#tbn ul li{
+    float:left;
+    text-align:center;
+}
 #list_l1{
-    position:relative;
-    width:100px;
-    height:100%;
+    background: url("sony_images/nav_line.jpg") no-repeat right center;
 }
 #list_l1>div{
     width:200px;
@@ -139,11 +145,11 @@ input{
     background-repeat: no-repeat;
     background-size:100% 100%;
 }
-/*数码影像*/
+/*一、1.数码影像*/
 #MainB1{
     width:100%;
     height:1767px;
-    border:2px solid red;
+    /*border:2px solid red;*/
 }
 #MainB1>h2{
     text-align:center;
@@ -152,6 +158,147 @@ input{
     background:url("sony_images/blocktitlelogo.png") no-repeat;
     background-position:0px center;
 }
+/*2.导航栏字体样式*/
+.font-s{
+    font-size: 5px;
+    color:#666;
+}
+/*3.导航栏边框样式*/
+ul.font-s>li:not(nth-child){
+   border-right:1px solid #6b6b6b;
+}
+/*4商品大厦主体*/
+.MainBlock{
+    margin:0 auto;
+    margin-top:30px;
+    box-sizing:border-box;
+    width:1220px;
+    height:1426px;
+    /*border:1px solid red;*/
+    /*padding:;*/
+}
+/*4.1商场大厦左*/
+.MainBlock_left{
+    width:50%;
+    height:100%;
+    float:left;
+    /*border:1px solid red;*/
+    padding:;
+}
+/*4.1.0商场内部块公共样式*/
+.MainBlock_left>div{
+    float:left;
+    /*border:1px solid red;*/
+}
+/*4.1.1商场左内部第一个样式*/
+.MainBlock_left>div:first-child{
+    height:703px;
+    background:url("");
+}
+/*4.1.2商场内部第2个块样式*/
+.MainBlock_left>div:nth-child(2){
+    height:295px;
+    background:url("");
+}
+/*4.1.3商场内部第3个块样式*/
+.MainBlock_left>div:nth-child(3){
+    height:398px;
+    width:295px;
+    background:url();
+}
+/*4.1.4商场内部第4个块样式*/
+.MainBlock_left>div:nth-child(4){
+    height:194px;
+    width:295px;
+    background:url("");
+}
+/*4.1.5商场内部第5个块样式*/
+.MainBlock_left>div:nth-child(5){
+    height:194px;
+    width:295px;
+    background:url();
+}
+/*4.2商场大厦右*/
+.MainBlock_right{
+    width:50%;
+    height:100%;
+    float:left;
+}
+/*4.2.0商场内部块公共样式*/
+.MainBlock_right>div{
+    float:left;
+    /*border:1px solid red;*/
+}
+/*4.2.1商场左内部第一个样式*/
+.MainBlock_right>div:first-child{
+    width:295px;
+    height:398px;
+    background:url("");
+}
+/*4.2.2商场内部第2个块样式*/
+.MainBlock_right>div:nth-child(2){
+    height:398px;
+    width:295px;
+    background:url("");
+}
+/*4.2.3商场内部第3个块样式*/
+.MainBlock_right>div:nth-child(3){
+    height:295px;
+    width:295px;
+    background:url();
+}
+/*4.2.4商场内部第4个块样式*/
+.MainBlock_right>div:nth-child(4){
+    height:295px;
+    width:295px;
+    background:url("");
+}
+/*4.2.5商场内部第5个块样式*/
+.MainBlock_right>div:nth-child(5){
+    height:703px;
+    width:600px;
+    background:url();
+}
+/*4.0商场大厦背景图伸缩效果*/
+@keyframes bg-scale{
+    0%{
+        background-size:100% 100%;
+        background-position: center;
+    }
+    100%{
+        background-size: 105% 105%;
+        background-position: center;
+    }
+}
+#MainB1>.MainBlock>div>div{
+    overflow: hidden;
+}
+#MainB1>.MainBlock>div>div>img{
+    transition-duration: 1s;
+    /*background-position: center;*/
+}
+#MainB1>.MainBlock>div>div>img:hover{
+    animation-name:bg-scale;
+    transform:scale(1.1,1.1);
+}
+/*5.0商场最底部文字公共样式*/
+#MainB1>.block_bottom{
+    font-size:12px;
+    color:#000;
+}
+/*5.2商场底部文字装机必备样式*/
+#MainB1>.block_bottom>span{
+    font-weight: bold;
+    font-size: 14px;
+    color: #2591da;
+    position:relative;
+    top:-2px;
+}
+/*5.2商场最底部文字边框*/
+#MainB1>.block_bottom>ul>li+li{
+    border-left:1px solid #000;
+}
+
 /*便携音频*/
 #MainB2{
     width:100%;
