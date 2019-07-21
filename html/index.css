@@ -105,6 +105,8 @@ a>img:hover{
 	justify-content:space-around;
 	align-items:center;
 	
+}#animate>span:hover{
+	animation:zoomOutDown 2s;
 }
 #animate>span{
 	display:block;
@@ -114,6 +116,63 @@ a>img:hover{
 	color:#f35626;
 	/*background-image:linear-gradient(92deg, #f35626 0%,#feab3a 100%);*/
 }
-#animate:hover{
-	animation:zoomOutDown 2s;
+
+/*网易云的父元素*/
+#lalala{
+	border:1px solid red;
+	width:65%;
+	height:600px;
+	position: absolute;
+	top:1265px;
+	left:533px;
+}
+/*网易云音乐*/
+#wyyyy{
+	width:220px;
+	height:300px;
+	background-color:#f18c9f;
+	position: relative;
+	top:10px;
+	left:10px;
+	/*transition:transform 0.4 ease;*/
+	cursor: pointer;
+}
+#wyyyy:hover{
+	box-shadow: 1px 4px 10px 2px #ccc;
+}
+#wyyyy>div:first-child{
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:50px;
+	left:55px;
+	background-image:url("index_images/iconall.png");
+	background-position: -6px -392px;
+	transform:scale(0);
+	transition-duration: 0.3s;
+	transition-timing-function: cubic-bezier(0.075,0.82,0.165,1);
+}
+#wyyyy:hover>div:first-child{
+	transform:scale(.8);
+}
+#wyyyy>div.d-inline-block{
+	margin-top:12px;
+	transition-duration: 0.7s;
+	transition-timing-function: cubic-bezier(0.075,0.82,0.165,1);
+}
+#wyyyy:hover>div.d-inline-block{
+	transform:translateY(-10px);
+}
+#wyyyy>img{
+	width:220px;
+	height:220px;
+}
+#wyyyy p{
+	font-size:15px;
+}
+#wyyyy span{
+	font-size:12px;
+}
+#wyyyy:hover em{
+	color:red;
 }

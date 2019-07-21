@@ -31,6 +31,10 @@
 			xhr.send();
 		}
 	</script>
+	<link rel="stylesheet" href="boot/bootstrap.css"/>
+    <script src="boot/jquery.min.js"></script>
+    <script src="boot/popper.min.js"></script>
+    <script src="boot/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
 </head>
@@ -54,21 +58,22 @@
 	<a href="http://127.0.0.1:8080/user_reg.html">注册</a>
 	<!-- 登录按钮 -->
 	<button onclick="login()">登录</button>
-	
-		
 	<a href="">hahahahaha</a>
 	<a href="http://127.0.0.1:8080/Adm/index.html">管理员页面</a>
 	<!-- 小黄帽 -->
-	<a href=""><img src="8.jpg"></a>
+	<a href="" class="d-inline-block"><img src="8.jpg"></a>
+	<!-- 中间大伸缩图 -->
 	<div id="shensuotu">
 		
 		<img src="1.png">
 	</div>
-	<div id="p30">
-		<img id="p30_" src="p30_left_cn.png">
-		<img id="p30_shadow" src="p30_shadow.png">
+	<!-- 华为p30 -->
+	<div id="p30" class="d-inline-block">
+		<img id="p30_" src="p30_left_cn.png" class="d-inline-block">
+		<img id="p30_shadow" src="p30_shadow.png" class="d-inline-block">
 	</div>
-	<div id="zsk" class="zst">
+	<!-- 纪念碑谷 -->
+	<div id="zsk" class="zst d-inline-block">
 		<div class="zsts">
 			<a href="#"><img src="spk.jpg" title="『空间摄影』纪念碑谷"></a>
 		</div>
@@ -76,10 +81,23 @@
 			<p class="biaoti"><a href="">『空间摄影』纪念碑谷</a></p>
 			<p class="fenlei">插画-商业插画</p>
 		</div>
-		<div class="zstx">
-			
+		<div class="zstx">	
 		</div>
 	</div>
+	<!-- 上边那几个做了定位懒得换就又加了一个div -->
+	<div id="lalala" class="d-inline-block">
+		<!-- 网易云音乐悬浮效果 -->
+		<div id="wyyyy" class="d-inline-block rounded">
+			<div></div>
+			<img src="index_images/302.jpg" class="rounded-top">
+			<div class="d-inline-block">
+				<p class="mb-0 d-inline-block">我有超能力，超喜欢你。</p>
+				<br>
+				<span>播放量<em>156.1w</em></span>
+			</div>
+		</div>
+	</div>
+	
 	
 </body>
 </html>

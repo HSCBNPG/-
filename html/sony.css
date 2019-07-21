@@ -27,7 +27,6 @@ input{
 	width:1210px;
 	height:65px;
     margin:0 auto;
-    overflow:hidden;
 }
 #log{
     box-sizing: border-box;
@@ -83,7 +82,7 @@ input{
     clear:both;
 }
 /* 第一个二级列表 */
-#tbn ul li a:hover{
+#tbn>ul>li>a:hover{
     background:white url(sony_images/dot_down_blue.jpg) no-repeat 90px center;
     color: #1fa8e2;
 }
@@ -93,18 +92,19 @@ input{
 }
 #list_l1{
     background: url("sony_images/nav_line.jpg") no-repeat right center;
+    position: relative;
 }
-#list_l1>div{
+#list_l1>.fenlei{
+    display:none;
+}
+#list_l1:hover>.fenlei{
+    display: block;
     width:200px;
     height:500px;
     position:absolute;
     top:65px;
     right:0px;
-    border:1px solid red;
-    display:none;
-}
-#list_l1:hover>div{
-    display: block;
+    border:2px solid #000;
 }
 /* 头部导航栏右侧样式 */
 #header_right{
@@ -116,9 +116,25 @@ input{
 }
 #shopping_car{
     float:right;
+    position:relative;
     width:40px;
     height:65px;
     background:url(sony_images/icon_shopping_1.png) no-repeat center center;
+}
+#shuliang{
+    width: 19px;
+    height:19px;
+    border-radius:50%;
+    background-color:#e60000;
+    line-height:19px;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+    font-weight: 500;
+    color:#fff;
+    position: absolute;
+    top:19px;
+    left:16px;
 }
 #header_right>div{
     float:right;
@@ -146,20 +162,23 @@ input{
     background-size:100% 100%;
 }
 /*一、1.数码影像*/
+#MainB2,
 #MainB1{
-    width:100%;
-    height:1767px;
-    /*border:2px solid red;*/
+    width:1220px;
+    height:1650px;
+    margin:0 auto;
 }
 #MainB1>h2{
     text-align:center;
 }
+/*一楼数码影像标题背景图*/
 #smyx_bg{
     background:url("sony_images/blocktitlelogo.png") no-repeat;
     background-position:0px center;
 }
 /*2.导航栏字体样式*/
-.font-s{
+#MainB2>ul.font-s>li>a,
+#MainB1>ul.font-s>li>a{
     font-size: 5px;
     color:#666;
 }
@@ -167,8 +186,15 @@ input{
 ul.font-s>li:not(nth-child){
    border-right:1px solid #6b6b6b;
 }
+#MainB2>ul.font-s>li:not(:nth-child(2)){
+    width:101px;
+}
+#MainB2>ul.font-s>li:first-child{
+    width:130px;
+}
 /*4商品大厦主体*/
-.MainBlock{
+.MainBlock2,
+.MainBlock1{
     margin:0 auto;
     margin-top:30px;
     box-sizing:border-box;
@@ -193,30 +219,25 @@ ul.font-s>li:not(nth-child){
 /*4.1.1商场左内部第一个样式*/
 .MainBlock_left>div:first-child{
     height:703px;
-    background:url("");
 }
 /*4.1.2商场内部第2个块样式*/
 .MainBlock_left>div:nth-child(2){
     height:295px;
-    background:url("");
 }
 /*4.1.3商场内部第3个块样式*/
 .MainBlock_left>div:nth-child(3){
     height:398px;
     width:295px;
-    background:url();
 }
 /*4.1.4商场内部第4个块样式*/
 .MainBlock_left>div:nth-child(4){
     height:194px;
     width:295px;
-    background:url("");
 }
 /*4.1.5商场内部第5个块样式*/
 .MainBlock_left>div:nth-child(5){
     height:194px;
     width:295px;
-    background:url();
 }
 /*4.2商场大厦右*/
 .MainBlock_right{
@@ -233,31 +254,26 @@ ul.font-s>li:not(nth-child){
 .MainBlock_right>div:first-child{
     width:295px;
     height:398px;
-    background:url("");
 }
 /*4.2.2商场内部第2个块样式*/
 .MainBlock_right>div:nth-child(2){
     height:398px;
     width:295px;
-    background:url("");
 }
 /*4.2.3商场内部第3个块样式*/
 .MainBlock_right>div:nth-child(3){
     height:295px;
     width:295px;
-    background:url();
 }
 /*4.2.4商场内部第4个块样式*/
 .MainBlock_right>div:nth-child(4){
     height:295px;
     width:295px;
-    background:url("");
 }
 /*4.2.5商场内部第5个块样式*/
 .MainBlock_right>div:nth-child(5){
     height:703px;
     width:600px;
-    background:url();
 }
 /*4.0商场大厦背景图伸缩效果*/
 @keyframes bg-scale{
@@ -270,44 +286,56 @@ ul.font-s>li:not(nth-child){
         background-position: center;
     }
 }
-#MainB1>.MainBlock>div>div{
+#MainB2>.MainBlock2>div>div,
+#MainB1>.MainBlock1>div>div{
     overflow: hidden;
 }
-#MainB1>.MainBlock>div>div>img{
+#MainB2>.MainBlock2>div>div>img,
+#MainB1>.MainBlock1>div>div>img{
     transition-duration: 1s;
     /*background-position: center;*/
 }
-#MainB1>.MainBlock>div>div>img:hover{
+#MainB2>.MainBlock2>div>div>img:hover,
+#MainB1>.MainBlock1>div>div>img:hover{
     animation-name:bg-scale;
     transform:scale(1.1,1.1);
 }
 /*5.0商场最底部文字公共样式*/
+#MainB2>.block_bottom,
 #MainB1>.block_bottom{
     font-size:12px;
     color:#000;
+    margin:0 auto;
 }
 /*5.2商场底部文字装机必备样式*/
+#MainB2>.block_bottom>span,
 #MainB1>.block_bottom>span{
     font-weight: bold;
     font-size: 14px;
     color: #2591da;
-    position:relative;
-    top:-2px;
+    /*position:relative;
+    top:-2px;*/
 }
 /*5.2商场最底部文字边框*/
+#MainB2>.block_bottom>ul>li+li,
 #MainB1>.block_bottom>ul>li+li{
     border-left:1px solid #000;
 }
-
+/*5.3商场二楼标题背景图*/
+#MainB2 #bxyp_bg{
+    background-image:url("sony_images/blocktitlelogo2.png");
+    background-repeat: no-repeat;
+    background-position:0px center; 
+}
 /*便携音频*/
-#MainB2{
+/*#MainB2{
     width:100%;
     height:1767px;
     border:2px solid red;
-}
-#MainB2>h2{
+}*/
+/*#MainB2>h2{
     text-align: center;
-}
+}*/
 /*会员专区*/
 #MainBMySony{
     width:100%;
