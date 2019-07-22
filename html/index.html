@@ -96,6 +96,36 @@
 				<span>播放量<em>156.1w</em></span>
 			</div>
 		</div>
+		<!-- 手风琴 -->
+		<div id="parent" class="w-50 mt-5">
+			<div class="card">
+				<div class="card-header">
+					<a href="#c1" data-toggle="collapse" class="card-link">
+						卡片1
+					</a>
+				</div>
+				<div data-parent="#parent" id="c1" class="collapse">
+					<div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<a href="#c2" data-toggle="collapse" class="card-link">卡片2</a>
+				</div>
+				<div id="c2" data-parent="#parent" class="collapse">
+					<div class="card-body">
+						lorem lorem lorem lorem
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 折叠 -->
+		<!-- 1.按钮 -->
+		<button data-toggle="collapse" data-target="#fold" class="btn btn-danger mt-3">折叠</button>
+		<!-- 2.内容 -->
+		<div id="fold" class="collapse bg-success">
+			今天真是太热了
+		</div>
 	</div>
 	
 	
