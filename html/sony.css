@@ -96,6 +96,7 @@ input{
 }
 #list_l1>.fenlei{
     display:none;
+    z-index: 999;
 }
 #list_l1:hover>.fenlei{
     display: block;
@@ -157,9 +158,20 @@ input{
 #swiper-container{
     width:100%;
     height:800px;
-    background-image:url('sony_images/kv_sel35f18f_xpfb.jpg');
+    /*background-image:url('sony_images/kv_sel35f18f_xpfb.jpg');*/
     background-repeat: no-repeat;
     background-size:100% 100%;
+}
+.carousel-indicators li{
+    background:#fff;
+    border-radius:50%;
+    width:0.8rem;
+    height:0.8rem;
+    margin-left:0.4rem;
+    margin-right:0.4rem;
+}
+.carousel-indicators li.active{
+    background:#0aa1ed;
 }
 /*一、1.数码影像*/
 #MainB2,
