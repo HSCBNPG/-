@@ -288,28 +288,19 @@ ul.font-s>li:not(nth-child){
     width:600px;
 }
 /*4.0商场大厦背景图伸缩效果*/
-@keyframes bg-scale{
-    0%{
-        background-size:100% 100%;
-        background-position: center;
-    }
-    100%{
-        background-size: 105% 105%;
-        background-position: center;
-    }
-}
 #MainB2>.MainBlock2>div>div,
 #MainB1>.MainBlock1>div>div{
     overflow: hidden;
 }
+.my_hover,
 #MainB2>.MainBlock2>div>div>img,
 #MainB1>.MainBlock1>div>div>img{
     transition-duration: 1s;
     /*background-position: center;*/
 }
 #MainB2>.MainBlock2>div>div>img:hover,
+.my_hover:hover,
 #MainB1>.MainBlock1>div>div>img:hover{
-    animation-name:bg-scale;
     transform:scale(1.1,1.1);
 }
 /*5.0商场最底部文字公共样式*/
