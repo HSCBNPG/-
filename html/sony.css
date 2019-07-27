@@ -221,7 +221,6 @@ ul.font-s>li:not(nth-child){
     height:100%;
     float:left;
     /*border:1px solid red;*/
-    padding:;
 }
 /*4.1.0商场内部块公共样式*/
 .MainBlock_left>div{
@@ -346,10 +345,54 @@ ul.font-s>li:not(nth-child){
     border:1px solid red;
     background:#0a83d6;
 }
-#MainBMySony>h2{
+#MainBMySony>h3{
     background:url("sony_images/blocktitlelogo4.png") no-repeat left center;
     text-align:center;
-    width:280px;
-    margin:0 auto;
+    width:358px;
+    margin:33px auto;
     padding-left:40px;
+    font-weight:normal;
+}
+#MainBMySony>ul:nth-child(2){
+    font-size:5px;
+}
+/* 卡片尺寸 */
+#MainBMySony>div:nth-child(3){
+    width:1300px;
+    margin:0 auto;
+    border:2px solid salmon;
+}
+.my_card-size{
+    width:220px;
+    height:320px;
+}
+/* 卡片尺寸 */
+.card-img-size{
+    width:556px;
+    height:320px;
+}
+/* 卡片图片定位 */
+.card-img-position{
+    position:relative;
+    top:0;
+    left:-100px;
+}
+/* 悬浮效果 */
+.card-none{
+    /* border:1px solid red; */
+    background-color:red;
+    width:0px;
+    height:320px;
+    /* display:none; */
+    transition:0.4s ease;
+
+}
+.card-none:hover,
+.card-hover:hover+.card-none{
+    
+    width:320px;
+    display:block;
+}
+.w-200{
+    width:200%;
 }
