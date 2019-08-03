@@ -358,31 +358,31 @@ ul.font-s>li:not(nth-child){
 }
 /* 卡片尺寸 */
 #MainBMySony>div:nth-child(3){
-    width:1300px;
+    width:1500px;
     margin:0 auto;
     border:2px solid salmon;
 }
 .my_card-size{
-    width:220px;
-    height:320px;
+    width:295px;
+    height:398px;
 }
 /* 卡片尺寸 */
 .card-img-size{
-    width:556px;
-    height:320px;
+    width:295px;
+    height:398px;
 }
 /* 卡片图片定位 */
-.card-img-position{
+/* .card-img-position{
     position:relative;
     top:0;
     left:-100px;
-}
+} */
 /* 悬浮效果 */
 .card-none{
     /* border:1px solid red; */
     background-color:red;
     width:0px;
-    height:320px;
+    height:398px;
     /* display:none; */
     transition:0.4s ease;
 
