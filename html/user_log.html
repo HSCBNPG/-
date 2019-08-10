@@ -1,6 +1,81 @@
-<h2>登录</h2>
-<form method="get" action="/user/log">
-	<input type="text" name="uname"><br>
-	<input type="text" name="upwd"><br>
-	<input type="submit" name="">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+    <link rel="stylesheet" href="boot/bootstrap.css"/>
+    <script src="boot/jquery.min.js"></script>
+    <script src="boot/popper.min.js"></script>
+    <script src="boot/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="sony_css/user_log.css">
+</head>
+<body>
+	<!-- 详情页导航栏 -->
+	<div class="nav">
+		<div class="w1210">
+			<a href="javascript:;" class="d-block float-left">
+				<img src="sony_images/club_logo.jpg" alt="">
+			</a>
+			<ul class="float-left ml280">
+				<li><a href="javascript:;">会员权益</a></li>
+				<li><a href="javascript:;">产品注册</a></li>
+				<li><a href="javascript:;">α café 社区</a></li>
+				<li><a href="javascript:;">我的账户</a></li>
+			</ul>
+			<a href="javascript:;" class="d-block float-right">
+				<img src="sony_images/mysony_logo.jpg" alt="">
+			</a>
+		</div>
+	</div>
+	<!-- 登陆区域 -->
+	<div id="loginArea">
+		<div class="w1210 clearfix">
+			<!-- 登陆 -->
+			<div class="log float-left dropup">
+				<div class="log-top dropup">
+					<p class="pt-3 pb-2 mb-4">会员登陆与注册</p>
+					<div class="dropup mb-4">
+						<input type="text" class="ipt ipt_user" placeholder="邮箱/用户名/手机">
+						<span class="del_input">×</span>
+					</div>
+					<div class="dropup mb-4">
+						<input type="text" class="ipt ipt_pwd" placeholder="密码">
+						<span class="del_input">×</span>
+					</div>
+					<!-- 滑动框 -->
+					<div class="alive"></div>
+					<!-- 忘记密码 -->
+					<div class="text-right py-2">
+						<a href="javascript:;" class="font14">忘记密码</a>
+					</div>
+					<a href="javascript:;" class="a-btn">登陆</a>
+					<a href="javascript:;" class="a-btn">会员注册</a>
+				</div>
+				<div class="log-btm">
+					<div class="info">
+						<span class="font14">会员权益</span>
+						<a href="javascript:;">
+							会员可享受更多活动优惠 赶快来看看>
+						</a>
+					</div>
+					<div class="help">
+						<span class="font14">帮助中心</span>
+						<a href="javascript:;">
+							Sony小助手在线帮你答题解忧？
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h2>登录</h2>
+	<form method="get" action="/user/log">
+		<input type="text" name="uname"><br>
+		<input type="text" name="upwd"><br>
+		<input type="submit" name="">
+	</form>
+</body>
+</html>

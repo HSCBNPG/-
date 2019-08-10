@@ -195,8 +195,13 @@ input{
     color:#666;
 }
 /*3.导航栏边框样式*/
+.minw80{
+    min-width:80px;
+}
 ul.font-s>li:not(nth-child){
    border-right:1px solid #6b6b6b;
+   height:16px;
+    line-height: 16px;
 }
 #MainB2>ul.font-s>li:not(:nth-child(2)){
     width:101px;

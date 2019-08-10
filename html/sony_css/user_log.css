@@ -1,0 +1,137 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin:0;
+    padding:0px;
+    font-size: 12px;
+}
+ul{
+    list-style:none;
+}
+body{
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+/* 详情页导航栏 */
+.nav{
+    width:100%;
+    height:68px;
+    background:#fff;
+}
+.w1210{
+    width:1210px;
+    margin:0 auto;
+}
+.ml280{
+    margin-left: 280px;
+}
+.nav ul li{
+    float:left;
+    height:68px;
+    line-height: 68px;
+    margin-right:75px;
+}
+.nav ul li a{
+    color:#262626;
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color:#13a0ff;
+}
+/* 登陆区域 */
+#loginArea{
+    width:100%;
+    padding:50px 0 35px 0;
+    position: relative;
+    background-image: url("../sony_images/t_bg.jpg");
+}
+.log{
+    width:352px;
+    height:523px;
+    background-color:#4dcaf3;
+}
+.log-top{
+    width:300px;
+    height:430px;
+    margin:0 auto;
+}
+.log .log-top p{
+    font-size:20px;
+    border-bottom:1px solid #36b4e7;
+    color:#42759d;
+    text-align: center;
+}
+/* 表单样式 */
+.ipt{
+    width:298px;
+    padding-left:60px;
+    height:48px;
+    background:none;
+    outline: none;
+    border:none;
+    font-size:16px;
+    color:#ffffff;
+}
+.ipt_user{
+    background-image: url("../sony_images/user.jpg")
+}
+.ipt_pwd{
+    background-image: url("../sony_images/pwd.jpg")
+}
+.del_input{
+    color:#fff;
+    font-size:20px;
+    position: absolute;
+    top:10px;
+    right:6px;
+    cursor:pointer;
+}
+/* 滑动框 */
+.alive{
+    width:298px;
+    height:36px;
+    border:1px solid red;
+}
+.font14{
+    font-size:14px;
+}
+/* 登陆/注册按钮 */
+.a-btn{
+    display:block;
+    background:#ffffff;
+    width:100;
+    height:52px;
+    color:#71a2b5;
+    font-size:18px;
+    margin-bottom:10px;
+    line-height: 52px;
+    text-align:center;
+}
+.a-btn:hover{
+    color:#00549f;
+    text-decoration:none;
+}
+/*  */
+.log-btm{
+    background-color:#31aef8;
+}
+.log-btm div{
+    height:46px;
+    line-height:46px;
+    background-repeat: no-repeat;
+    background-position: 25px center;
+    padding-left: 50px;
+    color:#ffffff;
+}
+.log-btm .info{
+    border-bottom:1px solid #298ee0;
+    background-image:url("../sony_images/crown.png")
+}
+.log-btm .help{
+    background-image:url("../sony_images/help.png")
+}
+.log-btm div a{
+    color:#ffffff;
+}
+.log-btm div a:hover{
+    color:#00549f;
+    text-decoration:none;
+}
