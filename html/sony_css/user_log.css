@@ -9,6 +9,12 @@ ul{
 body{
     font-family: "Microsoft YaHei", Arial, sans-serif;
 }
+.a-hover>img{
+    transition:transform 1s ease 0s;
+}
+.a-hover:hover>img{
+    transform:scale(1.07);
+}
 /* 详情页导航栏 */
 .nav{
     width:100%;
@@ -39,12 +45,12 @@ body{
 /* 登陆区域 */
 #loginArea{
     width:100%;
-    padding:50px 0 35px 0;
+    padding:50px 0 50px 0;
     position: relative;
     background-image: url("../sony_images/t_bg.jpg");
 }
 .log{
-    width:352px;
+    width:350px;
     height:523px;
     background-color:#4dcaf3;
 }
@@ -134,4 +140,65 @@ body{
 .log-btm div a:hover{
     color:#00549f;
     text-decoration:none;
+}
+/* 登陆区域右侧图片 */
+#loginArea .r-pho{
+    width:860px;
+}
+.mb-10{
+    margin-bottom:10px;
+}
+/* 中部大厦 */
+#ActiveKvArea{
+    background-color:rgb(241, 244, 249);
+}
+#ActiveKvArea h3{
+    font-size:24px;
+    text-align: center;
+    padding: 15px 0;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.10);
+    color:#333;
+}
+.tab-Control>div>div{
+    width:20%;
+    float:left;
+}
+.tab-Control>a{
+    display: block;
+    width:23px;
+    height:38px;
+    margin-top:-15px;
+    position:absolute;
+    top:50%;
+}
+.arrow-left{
+    left:-40px;
+    background:url("../sony_images/r_prev.png")
+}
+.arrow-right{
+    right:-40px;
+    background:url("../sony_images/r_next.png") right bottom
+}
+.tab-Control>div>div>a{
+    width:218px;
+    height:374px;
+    margin: 0 auto;
+}
+.w-600{
+    width:600px;
+}
+/* 活动大厅 */
+#acafe{
+    height:1008px;
+    background:url("../sony_images/acafe_bg.jpg") no-repeat;
+}
+.acafe_title{
+    padding:90px 0 40px 0;
+}
+.title_line{
+    width:70px;
+    height:4px;
+    background:rgba(255, 255, 255, .5);
+    margin:0 auto;
+    margin-top:20px;
 }
