@@ -8,6 +8,7 @@ body,ul,p,h2{
 h2{
     font-weight:normal;
 }
+a:hover,
 a{
     text-decoration: none;
 }
@@ -151,8 +152,9 @@ input{
     float:right;
     color:#1fa8e2;
 }
-#log_reg>a:visited{
-    color:#1fa8e2;
+
+#log_reg>span{
+    cursor: pointer;
 }
 /*首页轮播图*/
 #swiper-container{
@@ -400,4 +402,82 @@ ul.font-s>li:not(nth-child){
 }
 .w-200{
     width:200%;
+}
+.backg{
+    display:none;
+    background-color:rgb(0,0,0);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:.7;
+    cursor:pointer;
+    z-index: 9998;
+}
+#login{
+    display: none;
+    width:558px;
+    background:#fff;
+    position: absolute;
+    left:50%;
+    top:50%;
+    z-index:9999;
+    transform:translate(-279px,-192px)
+}
+.w-9{
+    width:90%;
+}
+.login_zones{
+    display:none;
+}
+.login_zones .pads{
+    padding-top:60px;
+    width:316px;
+    margin:0 auto;
+}
+.login_zones .pads input.ipt{
+    display: block;
+    font-size:12px;
+    float: left;
+    width:254px;
+    padding:15px 0 11px 15px;
+}
+.login_zones .pads div{
+    border:1px solid #bdbdbd;
+    margin-bottom: 10px;
+}
+.sp1{
+    display:block;
+    float: left;
+    width:48px;
+    height:46px;
+    border-right:1px solid #bdbdbd;
+    background:url("sony_images/usr.png") center center no-repeat #f3f3f3
+}
+.sp2{
+    background-image: url("sony_images/pass.png");
+}
+.remem{
+    float:left;
+    margin: 0;
+    color:#bfbfbf;
+}
+.pads>a{
+    height:48px;
+    line-height: 48px;
+    font-size:20px;
+    background:rgb(30,149,241);
+    color:#fff;
+}
+.bottom{
+    text-align: center;
+    color:#a7a7a7;
+    font-size:12px;
+}
+.active{
+    display:block !important;
+}
+.fade{
+    display:none !important;
 }
