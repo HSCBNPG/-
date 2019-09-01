@@ -419,7 +419,7 @@ ul.font-s>li:not(nth-child){
     display: none;
     width:558px;
     background:#fff;
-    position: absolute;
+    position: fixed;
     left:50%;
     top:50%;
     z-index:9999;
@@ -480,4 +480,13 @@ ul.font-s>li:not(nth-child){
 }
 .fade{
     display:none !important;
+    
+}
+.cursor{
+    cursor:pointer;
+}
+.fixed{
+    position:fixed;
+    top:0;
+    z-index:999;
 }

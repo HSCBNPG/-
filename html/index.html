@@ -37,12 +37,14 @@
     <script src="boot/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
+	<script src="https://cdn.bootcss.com/vue/2.6.10/vue.common.dev.js"></script>
 </head>
 <body>
+<div id="">
 	<!-- 首页头部导航栏 -->
 	<div id="header">
 		<div id="header_conten">
-			<a href="http://127.0.0.1:8080/sony.html" target="_blank">
+			<a href="sony.html" target="_blank">
 				<img src="sony_images/sony-logo.jpg" alt="">
 			</a>
 		</div>
@@ -55,103 +57,113 @@
 	</div>
 	<h1 id="shouye">首页</h1>
 	<a href="http://127.0.0.1:8080/user_reg.html">注册</a>
-	<!-- 登录按钮 -->
-	<button onclick="login()">登录</button>
-	<a href="">hahahahaha</a>
-	<a href="http://127.0.0.1:8080/Adm/index.html">管理员页面</a>
+	
 	<!-- 小黄帽 -->
-	<a href="" class="d-inline-block"><img src="8.jpg"></a>
+	<div class="">
+		<!-- 登录按钮 -->
+		<button onclick="login()">登录</button>
+		<a href="">hahahahaha</a>
+		<a href="http://127.0.0.1:8080/Adm/index.html">管理员页面</a>
+		<a href="" class="d-inline-block"><img src="8.jpg"></a>
+		
+	</div>
 	<!-- 中间大伸缩图 -->
 	<div id="shensuotu">
 		<img src="1.png">
 	</div>
-	<!-- 华为p30 -->
-	<div id="p30" class="d-inline-block">
-		<img id="p30_" src="p30_left_cn.png" class="d-inline-block">
-		<img id="p30_shadow" src="p30_shadow.png" class="d-inline-block">
-	</div>
-	<!-- 纪念碑谷 -->
-	<div id="zsk" class="zst d-inline-block">
-		<div class="zsts">
-			<a href="#"><img src="spk.jpg" title="『空间摄影』纪念碑谷"></a>
+	<div style="height:800px;padding-top:50px">
+			<!-- 华为p30 -->
+		<div id="p30" class="d-inline-block">
+			<img id="p30_" src="p30_left_cn.png" class="d-inline-block">
+			<img id="p30_shadow" src="p30_shadow.png" class="d-inline-block">
 		</div>
-		<div class="zstz">
-			<p class="biaoti"><a href="">『空间摄影』纪念碑谷</a></p>
-			<p class="fenlei">插画-商业插画</p>
+		<!-- 纪念碑谷 -->
+		<div id="zsk" class="zst d-inline-block">
+			<div class="zsts">
+				<a href="#"><img src="spk.jpg" title="『空间摄影』纪念碑谷"></a>
+			</div>
+			<div class="zstz">
+				<p class="biaoti"><a href="">『空间摄影』纪念碑谷</a></p>
+				<p class="fenlei">插画-商业插画</p>
+			</div>
+			<div class="zstx">	
+			</div>
 		</div>
-		<div class="zstx">	
-		</div>
-	</div>
-	<!-- 上边那几个做了定位懒得换就又加了一个div -->
-	<div id="lalala" class="d-inline-block">
-		<!-- 网易云音乐悬浮效果 -->
-		<div id="wyyyy" class="d-inline-block rounded">
-			<div></div>
-			<img src="index_images/302.jpg" class="rounded-top">
+		<!-- 上边那几个做了定位懒得换就又加了一个div -->
+		<div id="lalala" class="d-inline-block" style="position:relative;top:0">
+			<!-- 网易云音乐悬浮效果 -->
+			<div id="wyyyy" class="d-inline-block rounded">
+				<div></div>
+				<img src="index_images/302.jpg" class="rounded-top">
+				<div class="d-inline-block">
+					<p class="mb-0 d-inline-block">我有超能力，超喜欢你。</p>
+					<br>
+					<span>播放量<em>156.1w</em></span>
+				</div>
+			</div>
+			<!-- 手风琴 -->
+			<div id="parent" class="w-50 mt-5">
+				<div class="card">
+					<div class="card-header">
+						<a href="#c1" data-toggle="collapse" class="card-link">
+							卡片1
+						</a>
+					</div>
+					<div data-parent="#parent" id="c1" class="collapse">
+						<div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a href="#c2" data-toggle="collapse" class="card-link">卡片2</a>
+					</div>
+					<div id="c2" data-parent="#parent" class="collapse">
+						<div class="card-body">
+							lorem lorem lorem lorem
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 折叠 -->
+			<!-- 1.按钮 -->
+			<button data-toggle="collapse" data-target="#fold" class="btn btn-danger mt-3">折叠</button>
+			<!-- 2.内容 -->
 			<div class="d-inline-block">
-				<p class="mb-0 d-inline-block">我有超能力，超喜欢你。</p>
-				<br>
-				<span>播放量<em>156.1w</em></span>
+				<div id="fold" class="collapse bg-success">
+				今天真是太热了
+				</div>	
 			</div>
-		</div>
-		<!-- 手风琴 -->
-		<div id="parent" class="w-50 mt-5">
-			<div class="card">
-				<div class="card-header">
-					<a href="#c1" data-toggle="collapse" class="card-link">
-						卡片1
-					</a>
-				</div>
-				<div data-parent="#parent" id="c1" class="collapse">
-					<div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header">
-					<a href="#c2" data-toggle="collapse" class="card-link">卡片2</a>
-				</div>
-				<div id="c2" data-parent="#parent" class="collapse">
-					<div class="card-body">
-						lorem lorem lorem lorem
+			
+			<!-- 模态框 -->
+			<!-- 1.按钮 -->
+			<button data-toggle="modal" data-target="#modal" class="btn btn-info">打开模态框</button>
+			<!-- 2.框 -->
+			<div id="modal" class="modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4>信息收集</h4>
+						</div>
+						<div class="modal-body">
+							请输入密码
+							<input type="" name="">
+						</div>
+						<div class="modal-footer">
+							<button data-dismiss="modal" class="btn btn-danger">
+								关闭
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!--  -->
 		</div>
-		<!-- 折叠 -->
-		<!-- 1.按钮 -->
-		<button data-toggle="collapse" data-target="#fold" class="btn btn-danger mt-3">折叠</button>
-		<!-- 2.内容 -->
-		<div class="d-inline-block">
-			<div id="fold" class="collapse bg-success">
-			今天真是太热了
-			</div>	
-		</div>
-		
-		<!-- 模态框 -->
-		<!-- 1.按钮 -->
-		<button data-toggle="modal" data-target="#modal" class="btn btn-info">打开模态框</button>
-		<!-- 2.框 -->
-		<div id="modal" class="modal">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4>信息收集</h4>
-					</div>
-					<div class="modal-body">
-						请输入密码
-						<input type="" name="">
-					</div>
-					<div class="modal-footer">
-						<button data-dismiss="modal" class="btn btn-danger">
-							关闭
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--  -->
 	</div>
-	
-	
+	<!-- 轮播图 -->
+	<div id="app" class="px-5" style="width:1300px;height: 500px;border:1px solid red;">
+		
+	</div>
+</div>
+<script src="index.js"></script>
 </body>
 </html>

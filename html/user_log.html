@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="boot/bootstrap.css"/>
     <script src="boot/jquery.min.js"></script>
     <script src="boot/popper.min.js"></script>
-    <script src="boot/bootstrap.min.js"></script>
-	
+	<script src="boot/bootstrap.min.js"></script>
+	<script src="js/user_log.js"></script>	
 	<link rel="stylesheet" href="sony_css/user_log.css">
 </head>
 <body>
@@ -42,16 +42,24 @@
 						<span class="del_input">×</span>
 					</div>
 					<div class="dropup mb-4">
-						<input type="text" class="ipt ipt_pwd" placeholder="密码">
+						<input type="password" class="ipt ipt_pwd" placeholder="密码">
 						<span class="del_input">×</span>
 					</div>
 					<!-- 滑动框 -->
-					<div class="alive"></div>
+					<div id="move" class="alive">
+						<div class="bgcolor"></div>
+						<div class="lang slide"></div>
+						<div class="txt">
+							<div></div>
+							<span>请按住滑块，拖到最右边</span>
+						</div>
+					</div>
 					<!-- 忘记密码 -->
 					<div class="text-right py-2">
 						<a href="javascript:;" class="font14">忘记密码</a>
 					</div>
-					<a href="javascript:;" class="a-btn">登陆</a>
+					<!-- 登录按钮 -->
+					<a href="javascript:;" id="login" class="a-btn">登陆</a>
 					<a href="javascript:;" class="a-btn">会员注册</a>
 				</div>
 				<div class="log-btm">
