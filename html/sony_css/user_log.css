@@ -6,6 +6,16 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 ul{
     list-style:none;
 }
+/* 阿里矢量图标 */
+.icon {
+  margin-top: 6px;
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
 body{
     font-family: "Microsoft YaHei", Arial, sans-serif;
 }
@@ -122,15 +132,6 @@ body{
     width:100%;
     left:0px;
     z-index: 2;
-}
-.alive>.txt>div{
-    width:240px;
-    height:16px;
-    position: absolute;
-    top:10px;
-    left:50px;
-    background: rgba(0,0,0,0);
-    z-index: 3;
 }
 .alive>.bgcolor{
     position:absolute;

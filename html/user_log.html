@@ -11,8 +11,11 @@
 	<script src="boot/bootstrap.min.js"></script>
 	<script src="js/user_log.js"></script>	
 	<link rel="stylesheet" href="sony_css/user_log.css">
+	<link rel="stylesheet" href="icon/font_f7bu8g93s7/iconfont.css">
+	<script src="icon/font_z0cbrrbf37/iconfont.js"></script>
+	<script src="icon/font_f7bu8g93s7/iconfont.js"></script>
 </head>
-<body>
+<body  ondragstart='return false' onselect="return false">
 	<!-- 详情页导航栏 -->
 	<div class="nav">
 		<div class="w1210">
@@ -48,18 +51,22 @@
 					<!-- 滑动框 -->
 					<div id="move" class="alive">
 						<div class="bgcolor"></div>
-						<div class="lang slide"></div>
+						<div class="lang slide">
+							<!-- <span class="iconfont icon-cs-xy-1" style="font-size:24px;"></span> -->
+							<svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-cs-xy-1"></use>
+							</svg>
+						</div>
 						<div class="txt">
-							<div></div>
-							<span>请按住滑块，拖到最右边</span>
+							<span ondragstart='return false' onselect="return false">请按住滑块，拖到最右边</span>
 						</div>
 					</div>
 					<!-- 忘记密码 -->
 					<div class="text-right py-2">
-						<a href="javascript:;" class="font14">忘记密码</a>
+						<a href="javascript:;"  ondragstart='return false' onselect="return false" class="font14">忘记密码?</a>
 					</div>
 					<!-- 登录按钮 -->
-					<a href="javascript:;" id="login" class="a-btn">登陆</a>
+					<a href="javascript:;" ondragstart='return false' onselect="return false" id="login" class="a-btn">登陆</a>
 					<a href="javascript:;" class="a-btn">会员注册</a>
 				</div>
 				<div class="log-btm">

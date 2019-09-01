@@ -158,8 +158,8 @@ input{
 }
 /*首页轮播图*/
 #swiper-container{
-    width:100%;
-    height:800px;
+    width:1583px;
+    height:890px;
     /*background-image:url('sony_images/kv_sel35f18f_xpfb.jpg');*/
     background-repeat: no-repeat;
     background-size:100% 100%;
