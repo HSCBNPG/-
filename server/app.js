@@ -2,7 +2,7 @@
 const express=require('express');
 // 创建服务器
 var app=express();
-app.listen(8080);
+app.listen(8081);
 // 引入路由器模块
 var router=require('./routes/user.js');
 // 引入管理员路由器模块

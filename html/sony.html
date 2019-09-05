@@ -4,339 +4,300 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/vue.js"></script>
+    
     <link rel="stylesheet" href="boot/bootstrap.css"/>
     <script src="boot/jquery.min.js"></script>
+    
+    <script src="js/header.js"></script>
+    
     <script src="boot/popper.min.js"></script>
     <script src="boot/bootstrap.min.js"></script>
     <link rel="stylesheet" href="sony.css">
     <title>myproj-sony</title>
 </head>
 <body>
-    <!-- 首页头部导航栏 -->
-	<div id="header">
-        <div id="header_conten">
-            <!-- 头部log -->
-            <div id="log">
-                <a href="">
-                    <img src="sony_images/sony-logo.jpg" alt="SONY">
+    <div id="#app">
+        <div id="header"></div>
+        <!-- 首页轮播图 -->
+        <div id="swiper-container">
+            <!-- 轮播图整体 -->
+            <div id="lunbo" class="carousel" data-ride="carousel">
+                <!-- 图片轮播 -->
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                        <img class="w-100 h-100" src="sony_images/kv_sel35f18f_xpfb.jpg">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img class="w-100 h-100" src="sony_images/kv_gmaster_1907.jpg">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img class="w-100 h-100" src="sony_images/kv_a7rm4_yskq.jpg">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img class="w-100 h-100" src="sony_images/kv_rx100m7_yskq.jpg" alt="">
+                    </div>
+                </div>
+                <!-- 左右箭头 -->
+                <a href="#lunbo" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
                 </a>
-            </div>
-            <!-- 二级列表,搜索框 -->
-            <div id="header_nav_main">
-                <div id="tbn">
-                    <ul>
-                        <li id="list_l1" class="clearfix">
-                           <a href="#">商品分类</a> 
-                           <ul class="fenlei"></ul>
-                        </li>
-                        <li class="clearfix">
-                            <a href="#">网站导航</a>
-                        </li>
-                        <li id="list_serch">
-                            <input type="text" id="serch" placeholder="真无线降噪耳机WF-1000XM3">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 头部导航栏右侧 -->
-            <div id="header_right">
-                <div id="shopping_car">
-                    <div id="shuliang">
-                        <span>0</span>
-                    </div>
-                </div>
-                <div id="server">
-                    <p>服务与支持</p>
-                </div>
-                <div>
-                    <p>My Sony</p>
-                </div>
-                <div id="log_reg">
-                    <span>登录</span>    
-                    <i>/</i>
-                    <span>注册</span>
-                </div>
+                <a href="#lunbo" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <!-- 轮播指示器 -->
+                <ul class="carousel-indicators" style="background:transparent">
+                    <li data-slide-to="0" data-target="#lunbo" class="indicators active"></li>
+                    <li data-slide-to="1" data-target="#lunbo" class="indicators"></li>
+                    <li data-slide-to="2" data-target="#lunbo" class="indicators"></li>
+                    <li data-slide-to="3" data-target="#lunbo" class="indicators"></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <!-- 首页轮播图 -->
-    <div id="swiper-container">
-        <!-- 轮播图整体 -->
-        <div id="lunbo" class="carousel h-100" data-ride="carousel">
-            <!-- 图片轮播 -->
-            <div class="carousel-inner h-100">
-                <div class="carousel-item active h-100">
-                    <img class="w-100 h-100" src="sony_images/kv_sel35f18f_xpfb.jpg">
-                </div>
-                <div class="carousel-item h-100">
-                    <img class="w-100 h-100" src="sony_images/kv_gmaster_1907.jpg">
-                </div>
-                <div class="carousel-item h-100">
-                    <img class="w-100 h-100" src="sony_images/kv_a7rm4_yskq.jpg">
-                </div>
-                <div class="carousel-item h-100">
-                    <img class="w-100 h-100" src="sony_images/kv_rx100m7_yskq.jpg" alt="">
+        <!-- 数码影像 -->
+        <div id="MainB1">
+            <!-- 商场大厦一楼标题 -->
+            <div class="container">
+                <div class="text-center py-5">
+                    <h4 id="smyx_bg" class="d-inline pl-5 py-2">数码影像</h4>
                 </div>
             </div>
-            <!-- 左右箭头 -->
-            <a href="#lunbo" class="carousel-control-prev" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a href="#lunbo" class="carousel-control-next" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-            <!-- 轮播指示器 -->
-            <ul class="carousel-indicators">
-                <li data-slide-to="0" data-target="#lunbo" class="indicators active"></li>
-                <li data-slide-to="1" data-target="#lunbo" class="indicators"></li>
-                <li data-slide-to="2" data-target="#lunbo" class="indicators"></li>
-                <li data-slide-to="3" data-target="#lunbo" class="indicators"></li>
+            <!-- 商场大厦一楼标题下导航栏 -->
+            <ul class="clearfix d-flex justify-content-center font-s text-center">
+                <li class="float-left px-3 minw80"><a href="">微单™/单电数码相机</a></li>
+                <li class="float-left px-3 minw80"><a href="">镜头</a></li>
+                <li class="float-left px-3 minw80"><a href="">数码相机</a></li>
+                <li class="float-left px-3 minw80"><a href="">数码摄像机</a></li>
+                <li class="float-left px-3 minw80"><a href="">运动相机</a></li>
+                <li class="float-left px-3 minw80"><a href="">配件</a></li>
+                <li class="float-left px-3 minw80"><a href="">应用软件</a></li>
+                <li class="float-left px-3 minw80"><a href="">线下体验</a></li>
+                <li class="float-left px-3 minw80"><a href="">PRO</a></li>
+                <li class="float-left px-3 minw80"><a href="">Support影像专业服务</a></li>
+                <li class="float-left px-3 minw80"><a href="">微摄会 α Universe</a></li>
             </ul>
-        </div>
-    </div>
-    <!-- 数码影像 -->
-    <div id="MainB1">
-        <!-- 商场大厦一楼标题 -->
-        <div class="container">
-            <div class="text-center py-5">
-                <h4 id="smyx_bg" class="d-inline pl-5 py-2">数码影像</h4>
-            </div>
-        </div>
-        <!-- 商场大厦一楼标题下导航栏 -->
-        <ul class="clearfix d-flex justify-content-center font-s text-center">
-            <li class="float-left px-3 minw80"><a href="">微单™/单电数码相机</a></li>
-            <li class="float-left px-3 minw80"><a href="">镜头</a></li>
-            <li class="float-left px-3 minw80"><a href="">数码相机</a></li>
-            <li class="float-left px-3 minw80"><a href="">数码摄像机</a></li>
-            <li class="float-left px-3 minw80"><a href="">运动相机</a></li>
-            <li class="float-left px-3 minw80"><a href="">配件</a></li>
-            <li class="float-left px-3 minw80"><a href="">应用软件</a></li>
-            <li class="float-left px-3 minw80"><a href="">线下体验</a></li>
-            <li class="float-left px-3 minw80"><a href="">PRO</a></li>
-            <li class="float-left px-3 minw80"><a href="">Support影像专业服务</a></li>
-            <li class="float-left px-3 minw80"><a href="">微摄会 α Universe</a></li>
-        </ul>
-        <!-- 商场大厦商品区域 -->
-        <div class="MainBlock1 px-1">
-            <!-- 商场左区域 -->
-            <div class="MainBlock_left pr-1 ">
-                <div class="mb-2 w-100">
-                    <!-- 第一个轮播图开始 -->
-                    <div class="carousel" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="my_hover w-100"  src="sony_images/block_a7m3_600703.jpg">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="my_hover w-100" src="sony_images/block_rx10m4_0906_600703.jpg">
+            <!-- 商场大厦商品区域 -->
+            <div class="MainBlock1 px-1">
+                <!-- 商场左区域 -->
+                <div class="MainBlock_left pr-1 ">
+                    <div class="mb-2 w-100">
+                        <!-- 第一个轮播图开始 -->
+                        <div class="carousel" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="my_hover w-100"  src="sony_images/block_a7m3_600703.jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="my_hover w-100" src="sony_images/block_rx10m4_0906_600703.jpg">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="mb-2 w-100">
-                    <!-- 第二个轮播图开始 -->
-                    <div class="carousel" data-ride="carousel">
-                        <!-- 轮播图片 -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item">
-                                <img class="my_hover w-100" src="sony_images/block_rx10m4_0906_600295.jpg">
-                            </div>
-                            <div class="carousel-item active">
-                                <img class="my_hover w-100" src="sony_images/zxhd_justear_1907.jpg">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="my_hover w-100" src="sony_images/block_srs_xb12_600295.jpg">
+                    <div class="mb-2 w-100">
+                        <!-- 第二个轮播图开始 -->
+                        <div class="carousel" data-ride="carousel">
+                            <!-- 轮播图片 -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img class="my_hover w-100" src="sony_images/block_rx10m4_0906_600295.jpg">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="my_hover w-100" src="sony_images/zxhd_justear_1907.jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="my_hover w-100" src="sony_images/block_srs_xb12_600295.jpg">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="mr-2">
+                        <img src="sony_images/block_rx100m6_0906_295398.jpg">
+                    </div>
+                    <div class="mb-2">
+                        <img src="sony_images/block_AX45.png">
+                    </div>
+                    <div class="">
+                        <img src="sony_images/block_rx0m2_0906_295194.jpg">
+                    </div>
                 </div>
-                <div class="mr-2">
-                    <img src="sony_images/block_rx100m6_0906_295398.jpg">
-                </div>
-                <div class="mb-2">
-                    <img src="sony_images/block_AX45.png">
-                </div>
-                <div class="">
-                    <img src="sony_images/block_rx0m2_0906_295194.jpg">
+                <!-- 商场右区域 -->
+                <div class="MainBlock_right pl-1">
+                    <div class="mr-2 mb-2">
+                        <img src="sony_images/block_a9_ver5_295398.jpg">
+                    </div>
+                    <div class="mb-2">
+                        <img src="sony_images/block_sel135f18gm_1905_295398.jpg">
+                    </div>
+                    <div class="mr-2 mb-2">
+                        <img src="sony_images/block_a7rm3_295294.jpg">
+                    </div>
+                    <div class="mb-2">
+                        <img src="sony_images/block_a6400l_0906_295294.jpg">
+                    </div>
+                    <div>
+                        <img src="sony_images/block_rx10m4_0906_600703.jpg">
+                    </div>
                 </div>
             </div>
-            <!-- 商场右区域 -->
-            <div class="MainBlock_right pl-1">
-                <div class="mr-2 mb-2">
-                    <img src="sony_images/block_a9_ver5_295398.jpg">
-                </div>
-                <div class="mb-2">
-                    <img src="sony_images/block_sel135f18gm_1905_295398.jpg">
-                </div>
-                <div class="mr-2 mb-2">
-                    <img src="sony_images/block_a7rm3_295294.jpg">
-                </div>
-                <div class="mb-2">
-                    <img src="sony_images/block_a6400l_0906_295294.jpg">
-                </div>
-                <div>
-                    <img src="sony_images/block_rx10m4_0906_600703.jpg">
-                </div>
+            <!-- 商场一楼底部装机必备 -->
+            <div class="block_bottom clearfix pl-3">
+                <span class="float-left d-inlineblock ">装机必备：</span>
+                <ul class="float-left">
+                    <li class="float-left px-2"><a href="">PlayMemories Mobile</a></li>
+                    <li class="float-left px-2"><a href="">PlayMemories Home</a></li>
+                    <li class="float-left px-2"><a href="">PlayMemories Camera Apps</a></li>
+                    <li class="float-left px-2"><a href="">Capture One (For Sony)</a></li>
+                    <li class="float-left px-2"><a href="">Action Cam APP</a></li>
+                    <li class="float-left px-2"><a href="">Movie Creator</a></li>
+                </ul>
             </div>
         </div>
-        <!-- 商场一楼底部装机必备 -->
-        <div class="block_bottom clearfix pl-3">
-            <span class="float-left d-inlineblock ">装机必备：</span>
-            <ul class="float-left">
-                <li class="float-left px-2"><a href="">PlayMemories Mobile</a></li>
-                <li class="float-left px-2"><a href="">PlayMemories Home</a></li>
-                <li class="float-left px-2"><a href="">PlayMemories Camera Apps</a></li>
-                <li class="float-left px-2"><a href="">Capture One (For Sony)</a></li>
-                <li class="float-left px-2"><a href="">Action Cam APP</a></li>
-                <li class="float-left px-2"><a href="">Movie Creator</a></li>
+        <!-- 便携音频 -->
+        <div id="MainB2">
+            <!-- 商场大厦二楼标题 -->
+            <div class="container">
+                <div class="text-center py-5">
+                    <h4 id="bxyp_bg" class="d-inline pl-5 py-2">便携音频</h4>
+                </div>
+            </div>
+            <!-- 商场大厦二楼标题下导航栏 -->
+            <ul class="clearfix d-flex justify-content-center font-s text-center">
+                <li class="float-left px-lg-3 mx-sm-0"><a href="">高解析度音频设备</a></li>
+                <li class="float-left px-lg-3 mx-sm-0"><a href="">MP4/MP3 播放器</a></li>
+                <li class="float-left px-lg-3 mx-sm-0"><a href="">数码录音棒</a></li>
+                <li class="float-left px-lg-3 mx-sm-0"><a href="">耳机</a></li>
+                <li class="float-left px-lg-3 mx-sm-0"><a href="">无线扬声器</a></li>
+                <li class="float-left px-lg-3 mx-sm-0"><a href="">专业麦克风</a></li>
+                <li class="float-left px-lg-3 mx-sm-0"><a href="">应用软件</a></li>
+                <li class="float-left px-lg-3 mx-sm-0"><a href="">热门活动</a></li>
+                <li class="float-left px-lg-3 mx-sm-0"><a href="">音乐鉴赏</a></li>
             </ul>
-        </div>
-    </div>
-    <!-- 便携音频 -->
-    <div id="MainB2">
-        <!-- 商场大厦二楼标题 -->
-        <div class="container">
-            <div class="text-center py-5">
-                <h4 id="bxyp_bg" class="d-inline pl-5 py-2">便携音频</h4>
-            </div>
-        </div>
-        <!-- 商场大厦二楼标题下导航栏 -->
-        <ul class="clearfix d-flex justify-content-center font-s text-center">
-            <li class="float-left px-lg-3 mx-sm-0"><a href="">高解析度音频设备</a></li>
-            <li class="float-left px-lg-3 mx-sm-0"><a href="">MP4/MP3 播放器</a></li>
-            <li class="float-left px-lg-3 mx-sm-0"><a href="">数码录音棒</a></li>
-            <li class="float-left px-lg-3 mx-sm-0"><a href="">耳机</a></li>
-            <li class="float-left px-lg-3 mx-sm-0"><a href="">无线扬声器</a></li>
-            <li class="float-left px-lg-3 mx-sm-0"><a href="">专业麦克风</a></li>
-            <li class="float-left px-lg-3 mx-sm-0"><a href="">应用软件</a></li>
-            <li class="float-left px-lg-3 mx-sm-0"><a href="">热门活动</a></li>
-            <li class="float-left px-lg-3 mx-sm-0"><a href="">音乐鉴赏</a></li>
-        </ul>
-        <!-- 商场大厦二楼商品区域 -->
-        <div class="MainBlock2 px-1">
-            <!-- 商场左区域 -->
-            <div class="MainBlock_left pr-1">
-                <!-- 竖着第一张图片 -->
-                <div class="mb-2 w-100">
-                    <img src="sony_images/block_a7m3_600703.jpg">
+            <!-- 商场大厦二楼商品区域 -->
+            <div class="MainBlock2 px-1">
+                <!-- 商场左区域 -->
+                <div class="MainBlock_left pr-1">
+                    <!-- 竖着第一张图片 -->
+                    <div class="mb-2 w-100">
+                        <img src="sony_images/block_a7m3_600703.jpg">
+                    </div>
+                    <!-- 左，竖第二张 -->
+                    <div class="mb-2 w-100">
+                        <img src="sony_images/block_rx10m4_0906_600295.jpg">
+                    </div>
+                    <div class="mr-2">
+                        <img src="sony_images/block_rx100m6_0906_295398.jpg">
+                    </div>
+                    <div class="mb-2">
+                        <img src="sony_images/block_AX45.png">
+                    </div>
+                    <div class="">
+                        <img src="sony_images/block_rx0m2_0906_295194.jpg">
+                    </div>
                 </div>
-                <!-- 左，竖第二张 -->
-                <div class="mb-2 w-100">
-                    <img src="sony_images/block_rx10m4_0906_600295.jpg">
-                </div>
-                <div class="mr-2">
-                    <img src="sony_images/block_rx100m6_0906_295398.jpg">
-                </div>
-                <div class="mb-2">
-                    <img src="sony_images/block_AX45.png">
-                </div>
-                <div class="">
-                    <img src="sony_images/block_rx0m2_0906_295194.jpg">
+                <!-- 商场右区域 -->
+                <div class="MainBlock_right pl-1">
+                    <div class="mr-2 mb-2">
+                        <img src="sony_images/block_a9_ver5_295398.jpg">
+                    </div>
+                    <div class="mb-2">
+                        <img src="sony_images/block_sel135f18gm_1905_295398.jpg">
+                    </div>
+                    <div class="mr-2 mb-2">
+                        <img src="sony_images/block_a7rm3_295294.jpg">
+                    </div>
+                    <div class="mb-2">
+                        <img src="sony_images/block_a6400l_0906_295294.jpg">
+                    </div>
+                    <div>
+                        <img src="sony_images/block_rx10m4_0906_600703.jpg">
+                    </div>
                 </div>
             </div>
-            <!-- 商场右区域 -->
-            <div class="MainBlock_right pl-1">
-                <div class="mr-2 mb-2">
-                    <img src="sony_images/block_a9_ver5_295398.jpg">
-                </div>
-                <div class="mb-2">
-                    <img src="sony_images/block_sel135f18gm_1905_295398.jpg">
-                </div>
-                <div class="mr-2 mb-2">
-                    <img src="sony_images/block_a7rm3_295294.jpg">
-                </div>
-                <div class="mb-2">
-                    <img src="sony_images/block_a6400l_0906_295294.jpg">
-                </div>
-                <div>
-                    <img src="sony_images/block_rx10m4_0906_600703.jpg">
+            <!-- 商场一楼底部装机必备 -->
+            <div class="block_bottom clearfix pl-3">
+                <span class="float-left d-inlineblock ">装机必备：</span>
+                <ul class="float-left">
+                    <li class="float-left px-2"><a href="">PlayMemories Mobile</a></li>
+                    <li class="float-left px-2"><a href="">PlayMemories Home</a></li>
+                    <li class="float-left px-2"><a href="">PlayMemories Camera Apps</a></li>
+                    <li class="float-left px-2"><a href="">Capture One (For Sony)</a></li>
+                    <li class="float-left px-2"><a href="">Action Cam APP</a></li>
+                    <li class="float-left px-2"><a href="">Movie Creator</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 会员专区 -->
+        <div id="MainBMySony">
+            <h3 class="text-white">My Sony Cliub会员专区</h3>
+            <!-- 导航 -->
+            
+            <ul class="clearfix d-flex justify-content-center  text-center bg-transparent text-white mb-5 mt-3">
+                <li class="float-left px-3">我的索尼</li>
+                <li class="float-left px-3 border-left">最新动态</li>
+                <li class="float-left px-3 border-left">产品注册</li>
+                <li class="float-left px-3 border-left">α café 社区</li>
+            </ul> 
+           
+            
+            <!-- 手风琴效果图片 -->
+            <div class="modal-open  ">
+                <div id="parent" class="w-100 clearfix d-flex justify-content-center">
+    
+                    <div class="my_card-size modal-open border card-hover float-left">
+                        <img class="card-img-size card-img-position" src="sony_images/block_wi_1000xb_295398.jpg" alt="">
+                    </div>
+                    <div class="card-none float-left"></div>
+                    <div class="my_card-size modal-open border card-hover float-left">
+                        <img class="card-img-size card-img-position" src="sony_images/block_sel135f18gm_1907_295398.jpg" alt="">                    
+                    </div>
+                    <div class="card-none float-left"></div>
+                    <div class="my_card-size modal-open border card-hover float-left">
+                        <img class="card-img-size card-img-position" src="sony_images/block_nw_zx300_295398.jpg" alt="">
+                    </div>
+                    <div class="card-none float-left"></div>
+                    <div class="my_card-size modal-open border card-hover float-left">
+                        <img class="card-img-size card-img-position" src="sony_images/block_rx100m7_600703.jpg" alt="">
+                    </div>
+                    <div class="card-none float-left"></div>
+    
                 </div>
             </div>
         </div>
-        <!-- 商场一楼底部装机必备 -->
-        <div class="block_bottom clearfix pl-3">
-            <span class="float-left d-inlineblock ">装机必备：</span>
-            <ul class="float-left">
-                <li class="float-left px-2"><a href="">PlayMemories Mobile</a></li>
-                <li class="float-left px-2"><a href="">PlayMemories Home</a></li>
-                <li class="float-left px-2"><a href="">PlayMemories Camera Apps</a></li>
-                <li class="float-left px-2"><a href="">Capture One (For Sony)</a></li>
-                <li class="float-left px-2"><a href="">Action Cam APP</a></li>
-                <li class="float-left px-2"><a href="">Movie Creator</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- 会员专区 -->
-    <div id="MainBMySony">
-        <h3 class="text-white">My Sony Cliub会员专区</h3>
-        <!-- 导航 -->
-        
-        <ul class="clearfix d-flex justify-content-center  text-center bg-transparent text-white mb-5 mt-3">
-            <li class="float-left px-3">我的索尼</li>
-            <li class="float-left px-3 border-left">最新动态</li>
-            <li class="float-left px-3 border-left">产品注册</li>
-            <li class="float-left px-3 border-left">α café 社区</li>
-        </ul> 
-       
-        
-        <!-- 手风琴效果图片 -->
-        <div class="modal-open  ">
-            <div id="parent" class="w-100 clearfix d-flex justify-content-center">
-
-                <div class="my_card-size modal-open border card-hover float-left">
-                    <img class="card-img-size card-img-position" src="sony_images/block_wi_1000xb_295398.jpg" alt="">
-                </div>
-                <div class="card-none float-left"></div>
-                <div class="my_card-size modal-open border card-hover float-left">
-                    <img class="card-img-size card-img-position" src="sony_images/block_sel135f18gm_1907_295398.jpg" alt="">                    
-                </div>
-                <div class="card-none float-left"></div>
-                <div class="my_card-size modal-open border card-hover float-left">
-                    <img class="card-img-size card-img-position" src="sony_images/block_nw_zx300_295398.jpg" alt="">
-                </div>
-                <div class="card-none float-left"></div>
-                <div class="my_card-size modal-open border card-hover float-left">
-                    <img class="card-img-size card-img-position" src="sony_images/block_rx100m7_600703.jpg" alt="">
-                </div>
-                <div class="card-none float-left"></div>
-
-            </div>
-        </div>
-    </div>
-<script src="js/jquery-1.11.3.js"></script>
-<script src="js/sony.js"></script>
-<div id="login" class="">
-    <div class="login_zones active pb-3">
-        <div class="clearfix">
-            <div class="w-9 clearfix float-left">
-                <img class="float-left w-50" src="sony_images/login_btn_01.jpg" alt="">
-                <img class="float-left w-50" src="sony_images/login_btn_02.jpg" alt="">
-            </div>
-            <img class="close" class="float-left" src="sony_images/close228.jpg" alt="">
-        </div>
-        <div class="pads">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/sony.js"></script>
+    <div id="login" class="">
+        <div class="login_zones active pb-3">
             <div class="clearfix">
-                <span class="sp1"></span>
-                <input class="ipt" type="text" placeholder="邮箱/用户名/手机">
+                <div class="w-9 clearfix float-left">
+                    <img class="float-left w-50" src="sony_images/login_btn_01.jpg" alt="">
+                    <img id="reg_img" class="float-left w-50 cursor" src="sony_images/login_btn_02.jpg" alt="">
+                </div>
+                <img class="close" class="float-left" src="sony_images/close228.jpg" alt="">
             </div>
-            <div class="clearfix">
-                <span class="sp1 sp2"></span>
-                <input class="ipt" type="text" placeholder="密码">
+            <div class="pads">
+                <div class="clearfix">
+                    <span class="sp1"></span>
+                    <input class="ipt" type="text" placeholder="邮箱/用户名/手机">
+                </div>
+                <div class="clearfix">
+                    <span class="sp1 sp2"></span>
+                    <input class="ipt" type="text" placeholder="密码">
+                </div>
+                <div class="border-0 clearfix">
+                    <label class="remem">
+                        <input type="checkbox" class="">记住用户名
+                    </label>
+                    <a href="javascript:;" class="float-right ">忘记密码</a>
+                </div>
+                <a class="d-block w-100 text-center mb-3" href="javascript:;">登录</a>
+                <div class="bottom border-0">如果您的用户名密码无法登录，请联系 400-810-1228</div>
             </div>
-            <div class="border-0 clearfix">
-                <label class="remem">
-                    <input type="checkbox" class="">记住用户名
-                </label>
-                <a href="javascript:;" class="float-right ">忘记密码</a>
-            </div>
-            <a class="d-block w-100 text-center mb-3" href="javascript:;">登录</a>
-            <div class="bottom border-0">如果您的用户名密码无法登录，请联系 400-810-1228</div>
+        </div>
+        <div class="register_zones">
+    
         </div>
     </div>
-    <div class="register_zones">
-
+    <div class="backg"></div>
     </div>
-</div>
-<div class="backg"></div>
 </body>
 </html>
