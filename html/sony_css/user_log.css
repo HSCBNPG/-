@@ -3,6 +3,14 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     padding:0px;
     font-size: 12px;
 }
+a::selection,
+p::selection,
+span::selection,
+img::selection,
+input::selection{
+    background: #ffff00;
+    color:#000;
+}
 ul{
     list-style:none;
 }

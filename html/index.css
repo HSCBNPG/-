@@ -176,3 +176,32 @@ a>img:hover{
 #wyyyy:hover em{
 	color:red;
 }
+/* 卡片尺寸 */
+.tantan{
+    width:1500px;
+    margin:0 auto;
+    border:2px solid salmon;
+}
+.my_card-size{
+    width:295px;
+    height:398px;
+}
+/* 卡片尺寸 */
+.card-img-size{
+    width:295px;
+    height:398px;
+}
+/* 悬浮效果 */
+.card-none{
+    /* border:1px solid red; */
+    background-color:red;
+    width:0px;
+    height:398px;
+    /* display:none; */
+    transition:0.4s ease;
+}
+.card-none:hover,
+.card-hover:hover+.card-none{
+    width:320px;
+    display:block;
+}
