@@ -192,7 +192,7 @@ input{
 /*2.导航栏字体样式*/
 #MainB2>ul.font-s>li>a,
 #MainB1>ul.font-s>li>a{
-    font-size: 5px;
+    font-size: 12px;
     color:#666;
 }
 /*3.导航栏边框样式*/
@@ -484,6 +484,61 @@ a.store{
 .ft-center p{
     margin-bottom:20px;
 }
-.ft-center>div>a{
-    
+.bg-a{
+    width:175px;
+    height:32px;
+    line-height:32px;
+    margin-bottom: 10px !important;
+    text-align: center;
+    font-size:14px !important;
+    color:#9e9e9e !important;
+    background-color:#464646;
+}
+.bg-a:hover{
+    background: #009ffb;
+    color: #fff !important;
+}
+.icon-tel{
+    position: relative;
+    width: 90px;
+}
+.icon-tel::after{
+    content: "";
+    position:absolute;
+    right: 0px;
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    background: url("sony_images/footer-icon_07.png")
+}
+.icon-tel:hover{
+    color: #fff;
+}
+.icon-tel:hover:after{
+    content: "";
+    position:absolute;
+    right: 0px;
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    background: url("sony_images/footer-icon_07on.png")
+}
+.ft-right>ul>li{
+    float: left;
+    margin-right: 62px;
+}
+.ft-right p{
+    margin-bottom:10px;
+}
+.super-list{
+    background: transparent;
+}
+.super-list>li{
+    margin-top:8px;
+    height: 16px;
+    line-height: 16px;
+}
+.super-list>li>a{
+    margin: 0;
+    display: inline;
 }
