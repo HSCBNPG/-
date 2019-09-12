@@ -171,6 +171,22 @@ input{
     margin-left:0.4rem;
     margin-right:0.4rem;
 }
+.carousel-control-prev-icon{
+    position: absolute;
+    left: 1px;
+    transform: translate(0,50px);
+    width: 64px;
+    height: 64px;
+    background:url("sony_images/prev1.png")
+}
+.carousel-control-next-icon{
+    position: absolute;
+    right: 1px;
+    transform: translate(0,50px);
+    height: 64px;
+    width: 64px;
+    background: url("sony_images/next1.png")
+}
 .carousel-indicators li.active{
     background:#0aa1ed;
 }
@@ -558,4 +574,47 @@ a.store{
 }
 .search-icon:hover::after{
     background: url("sony_images/footer-icon-on03_03.png")
+}
+.footer-top{
+    height: 255px;
+    border-bottom: 1px solid #969696;
+}
+.footer-bottom>ul>li{
+    float: left;
+}
+.footer-bottom>ul{
+    background:transparent;
+}
+.footer-bottom>ul>li:last-child{
+    float: right;
+    margin-right:0px; 
+}
+.f-b-t>li{
+    margin-right: 42px;
+}
+.f-b-t a,.f-b-t li{
+    color:#fff;
+    font-size: 12px;
+}
+.f-b-b>li{
+    margin-right: 27px;
+    font-size: 12px;
+    color:#6a6a6a;
+}
+.f-b-b li:not(:last-child) a{
+    color: #6a6a6a;
+}
+.icon-110{
+    display: inline-block;
+    position: relative;
+    width: 203px;
+    text-align: right;
+}
+.icon-110::before{
+    content: "";
+    left: 0px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("sony_images/footer-icon_11.png");
 }
