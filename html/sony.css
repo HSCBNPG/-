@@ -19,7 +19,7 @@ input{
 /* 头部导航栏样式 */
 #header{
 	width:100%;
-	height:65px;
+	/* height:65px; */
     background: #000000;
     color:white;
 }
@@ -525,7 +525,7 @@ a.store{
 }
 .ft-right>ul>li{
     float: left;
-    margin-right: 62px;
+    margin-right: 58px;
 }
 .ft-right p{
     margin-bottom:10px;
@@ -535,10 +535,27 @@ a.store{
 }
 .super-list>li{
     margin-top:8px;
-    height: 16px;
+    height: 18px;
     line-height: 16px;
 }
 .super-list>li>a{
     margin: 0;
     display: inline;
+}
+.super-list>li>a:hover{
+    color: #009ffb;
+}
+.search-icon{
+    position: relative;
+}
+.search-icon::after{
+    content: "";
+    position: absolute;
+    right: -22px;
+    width: 16px;
+    height: 16px;
+    background: url("sony_images/footer-icon_03.png")
+}
+.search-icon:hover::after{
+    background: url("sony_images/footer-icon-on03_03.png")
 }
