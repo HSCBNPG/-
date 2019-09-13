@@ -5,6 +5,9 @@ body,ul,p,h2{
     list-style:none;
     font-family:"Microsoft YaHei", Arial, sans-serif;
 }
+a{
+    color: #000;
+}
 h2{
     font-weight:normal;
 }
@@ -19,7 +22,6 @@ input{
 /* 头部导航栏样式 */
 #header{
 	width:100%;
-	/* height:65px; */
     background: #000000;
     color:white;
 }
@@ -32,15 +34,12 @@ input{
 #log{
     box-sizing: border-box;
     float:left;
-    /*width:200px;
-    height:100%;*/
    margin-top:25px;
    margin-left:25px;
 }
 #header_conten>#log>a{
     display:block;
     width:109px;
-    /*height:20px;*/
 }
 #log>a>img{
     width:100px;
@@ -55,16 +54,13 @@ input{
 #tbn ul li a{
     float:left;
     box-sizing:border-box;
-    /* border:1px solid red; */
     width:113px;
     line-height: 65px;
-    /* margin-right:13px; */
     color:white;
     text-align:center;
     background:url(sony_images/dot_down_black.jpg) no-repeat 95px center;
 }
 #serch{
-    /* border: 1px solid red; */
     float:left;
     width: 265px;
     height:25px;
@@ -144,7 +140,6 @@ input{
 }
 #header_right p{
     box-sizing:border-box;
-    /* border:1px solid red; */
     width:83px;
     background:url(sony_images/dot_down_black.jpg) no-repeat right center;
 }
@@ -152,9 +147,11 @@ input{
     float:right;
     color:#1fa8e2;
 }
-
 #log_reg>span{
     cursor: pointer;
+}
+#log_reg>span>a{
+    color:#1fa8e2;
 }
 /*首页轮播图*/
 #swiper-container{
@@ -234,20 +231,16 @@ ul.font-s>li:not(nth-child){
     box-sizing:border-box;
     width:1220px;
     height:1426px;
-    /*border:1px solid red;*/
-    /*padding:;*/
 }
 /*4.1商场大厦左*/
 .MainBlock_left{
     width:50%;
     height:100%;
     float:left;
-    /*border:1px solid red;*/
 }
 /*4.1.0商场内部块公共样式*/
 .MainBlock_left>div{
     float:left;
-    /*border:1px solid red;*/
 }
 /*4.1.1商场左内部第一个样式*/
 .MainBlock_left>div:first-child{
@@ -310,7 +303,8 @@ ul.font-s>li:not(nth-child){
 }
 /*4.0商场大厦背景图伸缩效果*/
 #MainB2>.MainBlock2>div>div,
-#MainB1>.MainBlock1>div>div{
+#MainB1>.MainBlock1>div>div,
+.MainBlock_right>div>div{
     overflow: hidden;
 }
 .my_hover,
@@ -337,8 +331,6 @@ ul.font-s>li:not(nth-child){
     font-weight: bold;
     font-size: 14px;
     color: #2591da;
-    /*position:relative;
-    top:-2px;*/
 }
 /*5.2商场最底部文字边框*/
 #MainB2>.block_bottom>ul>li+li,
@@ -366,7 +358,7 @@ ul.font-s>li:not(nth-child){
     font-weight:normal;
 }
 #MainBMySony>ul:nth-child(2){
-    font-size:5px;
+    font-size:12px;
 }
 .w-200{
     width:200%;
@@ -458,163 +450,49 @@ ul.font-s>li:not(nth-child){
     top:0;
     z-index:999;
 }
-/* footer */
-.footer-box{
-    height:415px;
-    min-width: 1210px;
-    padding: 30px 0 50px 0;
-    background: #000;
-}
-.footer-box>div{
-    width:1210px;
-    margin:0 auto;
-}
-.footer-top>div{
-    float: left;
-}
-.footer-top p{
-    color:#fff;
-    background: #000;
-    font-size:14px;
-    margin-bottom: 20px;
-    font-weight: lighter;
-}
-.footer-top a{
-    color:#6a6a6a;
-    font-size:12px;
-    margin-bottom:15px;
-    display: inline-block;
-}
-.ft-center{
-    margin:0px 220px 0px 125px;
-}
-.ft-left>a:hover{
-    color:#009ffb;
-}
-a.store{
-    font-size:14px;
-    display: inline-block;
-    margin-bottom: 40px;
-    color:white;
-}
-.ft-center p{
-    margin-bottom:20px;
-}
-.bg-a{
-    width:175px;
-    height:32px;
-    line-height:32px;
-    margin-bottom: 10px !important;
-    text-align: center;
-    font-size:14px !important;
-    color:#9e9e9e !important;
-    background-color:#464646;
-}
-.bg-a:hover{
-    background: #009ffb;
-    color: #fff !important;
-}
-.icon-tel{
+
+/* 商品图片详情 */
+.fu{
     position: relative;
-    width: 90px;
 }
-.icon-tel::after{
-    content: "";
+.zi{
     position:absolute;
-    right: 0px;
-    display: inline-block;
-    width: 18px;
-    height: 16px;
-    background: url("sony_images/footer-icon_07.png")
+    top:40px;
+    bottom:15px;
+    left:30px;
 }
-.icon-tel:hover{
-    color: #fff;
-}
-.icon-tel:hover:after{
-    content: "";
-    position:absolute;
-    right: 0px;
-    display: inline-block;
-    width: 18px;
-    height: 16px;
-    background: url("sony_images/footer-icon_07on.png")
-}
-.ft-right>ul>li{
-    float: left;
-    margin-right: 58px;
-}
-.ft-right p{
-    margin-bottom:10px;
-}
-.super-list{
+.zi>p{
+    color:#cccccc;
+    font-size: 14px;
     background: transparent;
+    font-weight: lighter;
+    text-shadow: none;
 }
-.super-list>li{
-    margin-top:8px;
-    height: 18px;
-    line-height: 16px;
+.zi>h3{
+    color: #fff;
+    font-size: 24px;
+    text-align:left;
+    font-weight:normal;
+    line-height: 24px;
+    margin: 10px 0px 7px;
 }
-.super-list>li>a{
-    margin: 0;
-    display: inline;
+.zi>span{
+    color:#0a83d7;
+    font-weight: bold;
+    font-size:14px;
 }
-.super-list>li>a:hover{
-    color: #009ffb;
-}
-.search-icon{
-    position: relative;
-}
-.search-icon::after{
-    content: "";
+.zi>.d-img{
     position: absolute;
-    right: -22px;
-    width: 16px;
-    height: 16px;
-    background: url("sony_images/footer-icon_03.png")
+    bottom: 0px;
 }
-.search-icon:hover::after{
-    background: url("sony_images/footer-icon-on03_03.png")
+.fu:hover img{
+    transform: scale(1.1,1.1)
 }
-.footer-top{
-    height: 255px;
-    border-bottom: 1px solid #969696;
+.r-12_b-10{
+    position:absolute;
+    right: 12px;
+    bottom: 10px;
 }
-.footer-bottom>ul>li{
-    float: left;
-}
-.footer-bottom>ul{
-    background:transparent;
-}
-.footer-bottom>ul>li:last-child{
-    float: right;
-    margin-right:0px; 
-}
-.f-b-t>li{
-    margin-right: 42px;
-}
-.f-b-t a,.f-b-t li{
-    color:#fff;
-    font-size: 12px;
-}
-.f-b-b>li{
-    margin-right: 27px;
-    font-size: 12px;
-    color:#6a6a6a;
-}
-.f-b-b li:not(:last-child) a{
-    color: #6a6a6a;
-}
-.icon-110{
-    display: inline-block;
-    position: relative;
-    width: 203px;
-    text-align: right;
-}
-.icon-110::before{
-    content: "";
-    left: 0px;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: url("sony_images/footer-icon_11.png");
+.fu:hover .d-img>img{
+    transform: scale(1,1)
 }
